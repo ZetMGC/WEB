@@ -38,7 +38,8 @@ tr:nth-child(odd){
 
 #ref {
     margin-top: 20px;
-    margin-left: 14%;
+    float: right;
+    margin-right: 5%;
 }
 
 #top a {
