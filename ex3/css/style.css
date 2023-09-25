@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -25,48 +27,60 @@ tr:nth-child(odd){
 #top {
     display: flex;
     flex-direction: column;
+    order: -1;
 }
 
 #company {
     flex-direction: row;
-    background-color: aqua;
+    background-color: bisque;
 }
 
 #table-div {
     margin-left: 15%;
     max-width: 300px;
-    background-color: #ccc;
+    background-color: bisque;
     margin-top: 20px;
     padding: 10px;
+    display: flex;
+    order: 1;
 }
 
 #nav {
     margin-top: 20px;
-    float: right;
     margin-right: 5%;
+    margin-left: 15%;
 }
 
 #nav a {
+    color: black;
     text-decoration: none;
-    background-color: rgb(56, 24, 24);
-    color: #ccc;
     padding: 3px;
     font-size: 1.4rem;
     margin-right: 20px;
     border-radius: 10%;
+    background-color: bisque;
+}
+
+#nav a:hover {
+    background-color: beige;
 }
 
 #top-text {
-    background-color: #ddd; 
     padding: 10px;
     font-weight: bold;
+    margin: 0;
+    padding-top: 40px;
 }
 
 #main-content { 
     max-width: 800px; 
-    background-color: #ccc; 
+    width: 100%;
+    background-color: bisque; 
     margin-top: 20px; 
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    order: 2;
 }
 
 #main-content ul { 
@@ -75,20 +89,26 @@ tr:nth-child(odd){
 
 #form-div {
     max-width: 200px;
-    background-color: #ccc;
+    background-color: bisque;
     margin: 0 auto;
     margin-top: 20px;
     margin-left: 15%;
     margin-right: 30%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    order: 3;
 }
 
 #footer {
     margin-top: 20px;
     width: 100%; 
-    background-color:#ccc; 
+    background-color:bisque; 
     padding: 10px; 
     height: 50px;
+    display: flex;
+    flex-direction: column;
+    order: 3;
 }
 
 @media screen and (min-width: 800px) {
@@ -98,14 +118,31 @@ tr:nth-child(odd){
         padding: 10px;
         height: 120px;
         flex-direction: row;
+        justify-content: space-between;
     }
-
+    
     #company {
         display: flex;
         flex-direction: row;
+        background-color: #ccc;
     }
 
     #nav {
         justify-content: flex-end;
+    }
+
+    #nav a {
+        padding: 10px;
+        background-color: rgb(56, 24, 24);
+        color: white;
+    }
+
+    #table-div, #footer, #main-content, #form-div {
+        order: 0;
+        background-color:#ccc; 
+    }
+
+    #nav a:hover {
+        background-color: rgb(104, 29, 29);
     }
 }
