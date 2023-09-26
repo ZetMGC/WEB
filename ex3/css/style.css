@@ -63,6 +63,7 @@ tr:nth-child(odd){
 
 #nav a:hover {
     background-color: beige;
+    box-shadow: 3px 3px 3px rgb(151, 112, 112);
 }
 
 #top-text {
@@ -144,5 +145,6 @@ tr:nth-child(odd){
 
     #nav a:hover {
         background-color: rgb(104, 29, 29);
+        box-shadow: 3px 3px 3px rgb(0, 0, 0);
     }
 }
