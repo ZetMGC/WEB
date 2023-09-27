@@ -37,18 +37,23 @@ tr:nth-child(odd){
 
 #table-div {
     margin-left: 15%;
-    max-width: 300px;
+    max-width: fit-content;
     background-color: bisque;
     margin-top: 20px;
     padding: 10px;
     display: flex;
     order: 1;
+    margin-left: 0%;
 }
 
 #nav {
+    display: flex;
     margin-top: 20px;
     margin-right: 5%;
-    margin-left: 15%;
+    margin-left: 25%;
+    flex-direction: column;
+    max-width: fit-content;
+    
 }
 
 #nav a {
@@ -74,8 +79,6 @@ tr:nth-child(odd){
 }
 
 #main-content { 
-    max-width: 800px; 
-    width: 100%;
     background-color: bisque; 
     margin-top: 20px; 
     padding: 10px;
@@ -93,8 +96,8 @@ tr:nth-child(odd){
     background-color: bisque;
     margin: 0 auto;
     margin-top: 20px;
-    margin-left: 15%;
-    margin-right: 30%;
+    margin-left: 5%;
+    max-width: fit-content;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -130,12 +133,24 @@ tr:nth-child(odd){
 
     #nav {
         justify-content: flex-end;
+        flex-direction: row;
+        max-height: 45px;
+        margin-left: 15%;
     }
 
     #nav a {
         padding: 10px;
         background-color: rgb(56, 24, 24);
         color: white;
+    }
+
+    #main-content {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    #table-div, #form-div {
+        margin-left: 25%;
     }
 
     #table-div, #footer, #main-content, #form-div {
