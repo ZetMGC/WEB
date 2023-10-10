@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    display: flex;
     flex-direction: column;
 }
 
@@ -24,9 +23,7 @@ tr:nth-child(odd){
 }
 
 #top {
-    display: flex;
     flex-direction: column;
-    order: -1;
 }
 
 #company {
@@ -37,8 +34,6 @@ tr:nth-child(odd){
 #table-div {
     max-width: fit-content;
     background-color: bisque;
-    display: flex;
-    order: 1;
 }
 
 #nav {
@@ -66,27 +61,18 @@ tr:nth-child(odd){
 
 #main-content { 
     background-color: bisque; 
-    display: flex;
-    flex-direction: column;
-    order: 2;
 }
 
 #form-div {
     max-width: 200px;
     background-color: bisque;
     max-width: fit-content;
-    display: flex;
-    flex-direction: column;
-    order: 3;
 }
 
 #footer {
     width: 100%; 
     background-color:bisque; 
     height: 50px;
-    display: flex;
-    flex-direction: column;
-    order: 3;
 }
 
 @media screen and (min-width: 800px) {
@@ -94,19 +80,13 @@ tr:nth-child(odd){
         width: 100%; 
         background-color:#ccc; 
         height: 120px;
-        flex-direction: row;
-        justify-content: space-between;
     }
     
     #company {
-        display: flex;
-        flex-direction: row;
         background-color: #ccc;
     }
 
     #nav {
-        justify-content: flex-end;
-        flex-direction: row;
         max-height: 45px;
     }
 
@@ -116,7 +96,6 @@ tr:nth-child(odd){
     }
 
     #table-div, #footer, #main-content, #form-div {
-        order: 0;
         background-color:#ccc; 
     }
 
