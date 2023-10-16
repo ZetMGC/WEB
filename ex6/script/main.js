@@ -42,6 +42,4 @@ function getFormValue(event) {
         if (CheckBox.checked) Result.value = (Number.value * 80 + 20) + "$";
         else Result.value = (Number.value * 80) + "$";
     }
-
-    Result.value = (Number.value * CurrentCost) + "$";
 };
