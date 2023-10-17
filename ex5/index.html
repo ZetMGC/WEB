@@ -9,31 +9,34 @@
 
 </head>
 <body>
-    <div class="row justify-content-center">
-        <div class="col-md-5 col-sm-7 col-lg-3 col-10 mt-3">
-            <form id="form">
-                <legend>Калькулятор стоимости заказа</legend>
-                <div class="mb-3">
-                    <label for="Select" class="form-label">Меню выбора продукта</label>
-                    <select id="Select" class="form-select" name="product" aria-label="Выбор продукта">
-                        <option selected>Выберите продукт</option>
-                        <option value="SSD">SSD</option>
-                        <option value="HDD">HDD</option>
-                        <option value="CPU">CPU</option>
-                        <option value="RAM">RAM</option>
-                    </select>
-                    <label for="Number" class="form-label mt-3">Количество штук:</label>
-                    <input id="Number" class="form-control" type="number" name="number" placeholder="Введите количество продукта." aria-label="пример ввода по умолчанию">
-                    <div class="row justify-content-between">
-                        <div class="col">
-                            <button type="submit" class="btn btn-primary mt-3">Рассчитать</button>
-                        </div>
-                        <div class="col">
-                            <input class="form-control mt-3" type="text" name="result" value="Результат: " aria-label="Пример отключенного входа" disabled readonly>
+    <div class="container-fluid">
+
+        <div class="row justify-content-center">
+            <div class="col-md-5 col-sm-7 col-lg-3 col-10 mt-3">
+                <form id="form">
+                    <legend>Калькулятор стоимости заказа</legend>
+                    <div class="mb-3">
+                        <label for="Select" class="form-label">Меню выбора продукта</label>
+                        <select id="Select" class="form-select" name="product" aria-label="Выбор продукта">
+                            <option selected>Выберите продукт</option>
+                            <option value="SSD">SSD</option>
+                            <option value="HDD">HDD</option>
+                            <option value="CPU">CPU</option>
+                            <option value="RAM">RAM</option>
+                        </select>
+                        <label for="Number" class="form-label mt-3">Количество штук:</label>
+                        <input id="Number" class="form-control" type="number" name="number" placeholder="Введите количество продукта." aria-label="пример ввода по умолчанию">
+                        <div class="row justify-content-between">
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary mt-3">Рассчитать</button>
+                            </div>
+                            <div class="col">
+                                <input class="form-control mt-3" type="text" name="result" value="Результат: " aria-label="Пример отключенного входа" disabled readonly>
+                            </div>
                         </div>
                     </div>
-                </div>
-              </form>
+                  </form>
+            </div>
         </div>
     </div>
     <script src="script/main.js"></script>
