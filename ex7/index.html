@@ -10,22 +10,22 @@
 <body>
     <div class="container-fluid">
         <div class="row justify-content-center mt-5">
-            <div class="col-7">
+            <div class="col-6">
                 <div class="row">
-                    <div class="col-1">
-                        <button type="button" class="btn btn-primary mt-5"  data-bs-toggle="button" autocomplete="off">⇦</button>
+                    <div class="col-1 mt-5">
+                        <button type="button" id="btn-l" onclick="RadioChanger('left')" class="btn btn-primary mt-5"  data-bs-toggle="button" autocomplete="off">⇦</button>
                     </div>
                     <div class="col">
-                        <div id="img" class="row">
-                            <img class="col" id="img-1" style="width: 30px;" src="img/dre.jpg" alt="">
-                            <img class="col" id="img-2" style="width: 30px;" src="img/omar.jpg" alt="">
-                            <img class="col" id="img-3" style="width: 30px;" src="img/will.jpg" alt="">
-                            <img class="col" id="img-4" style="width: 30px;" src="img/eddie.jpg" alt="">
-                            <img class="col" id="img-5" style="width: 30px;" src="img/michael.jpg" alt="">
+                        <div id="img" class="row justify-content-center mt-5">
+                            <img class="col" style="max-width: 200px; height: 190px;" id="img-1"  src="img/dre.jpg"     alt="">
+                            <img class="col" style="max-width: 200px; height: 190px;" id="img-2"  src="img/omar.jpg"    alt="">
+                            <img class="col" style="max-width: 200px; height: 190px;" id="img-3"  src="img/will.jpg"    alt="">
+                            <img class="col" style="max-width: 200px; height: 190px;" id="img-4"  src="img/eddie.jpg"   alt="">
+                            <img class="col" style="max-width: 200px; height: 190px;" id="img-5"  src="img/michael.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-1">
-                        <button type="button" class="btn btn-primary mt-5" data-bs-toggle="button" autocomplete="off">⇨</button>
+                    <div class="col-1 mt-5">
+                        <button type="button" id="btn-r" onclick="RadioChanger('right')" class="btn btn-primary mt-5" data-bs-toggle="button" autocomplete="off">⇨</button>
                     </div>
                 </div>
                 <div class="container-fluid">
