@@ -1,5 +1,3 @@
-const Prices = [100, 43, 544, 12];
-
 const form = document.getElementById('form');
 const radio = document.getElementById('radio');
 const HDD = document.getElementById('HDD');

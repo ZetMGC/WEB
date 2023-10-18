@@ -9,38 +9,42 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row mt-5">
+        <div class="row justify-content-center mt-5">
             <div class="col-7">
                 <div class="row">
                     <div class="col-1">
-                        <button type="button" class="col-2 btn btn-primary mt-4"  data-bs-toggle="button" autocomplete="off">⇦</button>
+                        <button type="button" class="btn btn-primary mt-5"  data-bs-toggle="button" autocomplete="off">⇦</button>
                     </div>
                     <div class="col">
                         <div id="img" class="row">
-                            <img class="col" style="width: 30px;" src="img/dre.jpg" alt="">
-                            <img class="col" style="width: 30px;" src="img/omar.jpg" alt="">
-                            <img class="col" style="width: 30px;" src="img/will.jpg" alt="">
-                            <img class="col" style="width: 30px;" src="img/eddie.jpg" alt="">
-                            <img class="col" style="width: 30px;" src="img/michael.jpg" alt="">
+                            <img class="col" id="img-1" style="width: 30px;" src="img/dre.jpg" alt="">
+                            <img class="col" id="img-2" style="width: 30px;" src="img/omar.jpg" alt="">
+                            <img class="col" id="img-3" style="width: 30px;" src="img/will.jpg" alt="">
+                            <img class="col" id="img-4" style="width: 30px;" src="img/eddie.jpg" alt="">
+                            <img class="col" id="img-5" style="width: 30px;" src="img/michael.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-1">
-                        <button type="button" class="btn btn-primary mt-4" data-bs-toggle="button" autocomplete="off">⇨</button>
+                        <button type="button" class="btn btn-primary mt-5" data-bs-toggle="button" autocomplete="off">⇨</button>
                     </div>
                 </div>
                 <div class="container-fluid">
                     <div id="pager" class="row justify-content-center">
                         <div class="col-3">
-                            <div class="row justify-content-center">
-                                <input class="col" type="radio">
-                                <input class="col" type="radio">
-                                <input class="col" type="radio">
+                            <div class="row mt-4 justify-content-center" id="radio">
+                                <input name="rbtn" id="rbtn-1" class="col" type="radio">
+                                <input name="rbtn" id="rbtn-2" class="col" type="radio">
+                                <input name="rbtn" id="rbtn-3" class="col" type="radio" checked>
+                                <input name="rbtn" id="rbtn-4" class="col" type="radio">
+                                <input name="rbtn" id="rbtn-5" class="col" type="radio">
                             </div>
                         </div>
                     </div>
                 </div>               
-                </div>
+            </div>
         </div>
     </div>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
