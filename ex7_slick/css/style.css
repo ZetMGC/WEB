@@ -1,0 +1,12 @@
+.slick-current {
+    box-shadow: 4px 4px 7px;
+    transition: all ease-in-out .3s;
+}
+
+img {
+    transition: all ease-in-out .3s;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+}
