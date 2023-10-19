@@ -6,51 +6,30 @@
     <title>ex. 7</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row justify-content-center mt-5">
-            <div class="col-7 col-md-9">
-                <div class="row">
-                    <div class="col-1 mt-5">
-                        <button type="button" id="btn-l" onclick="RadioChanger('left')" class="btn btn-primary mt-5"  data-bs-toggle="button" autocomplete="off">⇦</button>
-                    </div>
-                    <div class="col">
-                        <div id="img" class="row justify-content-center mt-5">
-                            <img class="col" style="max-width: 200px; height: 190px;" id="img-0"  src="img/dre.jpg"     alt="">
-                            <img class="col" style="max-width: 200px; height: 190px;" id="img-1"  src="img/omar.jpg"    alt="">
-                            <img class="col" style="max-width: 200px; height: 190px;" id="img-2"  src="img/will.jpg"    alt="">
-                            <img class="col" style="max-width: 200px; height: 190px;" id="img-3"  src="img/eddie.jpg"   alt="">
-                            <img class="col" style="max-width: 200px; height: 190px;" id="img-4"  src="img/michael.jpg" alt="">
-                            <img class="col" style="max-width: 200px; height: 190px;" id="img-4"  src="img/xxxtentacion.jpg" alt="">
-                            <img class="col" style="max-width: 200px; height: 190px;" id="img-4"  src="img/gray.jpg" alt="">
-                            <img class="col" style="max-width: 200px; height: 190px;" id="img-4"  src="img/jordan.jpeg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-1 mt-5">
-                        <button type="button" id="btn-r" onclick="RadioChanger('right')" class="btn btn-primary mt-5" data-bs-toggle="button" autocomplete="off">⇨</button>
-                    </div>
+    <div class="container-fluid" style="background-color: bisque;">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-8">
+                <div class="img mb-10">
+                    <img style="margin: 10px; border-radius: 20px;" src="img/dre.jpg" alt="dr.dre">
+                    <img style="margin: 10px; border-radius: 20px;" src="img/omar.jpg" alt="omar">
+                    <img style="margin: 10px; border-radius: 20px;" src="img/will.jpg" alt="will">
+                    <img style="margin: 10px; border-radius: 20px;" src="img/eddie.jpg" alt="eddie">
+                    <img style="margin: 10px; border-radius: 20px;" src="img/michael.jpg" alt="michael">
+                    <img style="margin: 10px; border-radius: 20px;" src="img/xxxtentacion.jpg" alt="xxxtentacion">
+                    <img style="margin: 10px; border-radius: 20px;" src="img/gray.jpg" alt="gray">
+                    <img style="margin: 10px; border-radius: 20px;" src="img/jordan.jpeg" alt="jordan">
                 </div>
-                <div class="container-fluid">
-                    <div id="pager" class="row justify-content-center">
-                        <div class="col-3">
-                            <div class="row mt-4 justify-content-center" id="radio">
-                                <input name="rbtn" id="rbtn-1" class="col" type="radio">
-                                <input name="rbtn" id="rbtn-2" class="col" type="radio">
-                                <input name="rbtn" id="rbtn-3" class="col" type="radio" checked>
-                                <input name="rbtn" id="rbtn-4" class="col" type="radio">
-                                <input name="rbtn" id="rbtn-5" class="col" type="radio">
-                                <input name="rbtn" id="rbtn-6" class="col" type="radio">
-                                <input name="rbtn" id="rbtn-7" class="col" type="radio">
-                                <input name="rbtn" id="rbtn-8" class="col" type="radio">
-                            </div>
-                        </div>
-                    </div>
-                </div>               
             </div>
         </div>
     </div>
+
     <script src="js/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
