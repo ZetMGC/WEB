@@ -15,6 +15,6 @@ function getFormValue(event) {
     else if (Product.value === 'CPU') CurrentCost = Prices[2];
     else if (Product.value === 'RAM') CurrentCost = Prices[3];
     else alert("Вы не выбрали продукт");
-
-    Result.value = (Number.value * CurrentCost) + "$";
+    if (Number.value > 0) Result.value = (Number.value * CurrentCost) + "$";
+    else alert("Укажите корректное количество товара!");
 };

@@ -43,40 +43,62 @@ function SliderChangeHandler(duration) {
         $('#btn-l').removeAttr("disabled");
         $('#btn-r').removeAttr("disabled");
     }
-    if(rbtns[0].checked) {
-        $('#img-1').animate({ "max-width": "262px", "height": "250px"}, 500);
-        $('#img-2').animate({ "max-width": "190px", "height": "190px"}, 500);
+    // if(rbtns[0].checked) {
+    //     $('#img-1').animate({ "max-width": "262px", "height": "250px"}, 500);
+    //     $('#img-2').animate({ "max-width": "190px", "height": "190px"}, 500);
 
-        $('#img-3').animate({ "max-width": "0px"}, 500);
-        $('#img-4').animate({ "max-width": "0px"}, 500);
-        $('#img-5').animate({ "max-width": "0px"}, 500);
-    } else if(rbtns[1].checked) {
-        $('#img-1').animate({ "max-width": "190px", "height": "190px"}, 500);
-        $('#img-2').animate({ "max-width": "262px", "height": "250px"}, 500);
-        $('#img-3').animate({ "max-width": "190px", "height": "190px"}, 500);
+    //     $('#img-3').animate({ "max-width": "0px"}, 500);
+    //     $('#img-4').animate({ "max-width": "0px"}, 500);
+    //     $('#img-5').animate({ "max-width": "0px"}, 500);
+    // } else if(rbtns[1].checked) {
+    //     $('#img-1').animate({ "max-width": "190px", "height": "190px"}, 500);
+    //     $('#img-2').animate({ "max-width": "262px", "height": "250px"}, 500);
+    //     $('#img-3').animate({ "max-width": "190px", "height": "190px"}, 500);
 
-        $('#img-4').animate({ "max-width": "0px"}, 500);
-        $('#img-5').animate({ "max-width": "0px"}, 500);
-    } else if(rbtns[2].checked) {
-        $('#img-2').animate({ "max-width": "190px", "height": "190px"}, 500);
-        $('#img-3').animate({ "max-width": "262px", "height": "250px"}, 500);
-        $('#img-4').animate({ "max-width": "190px", "height": "190px"}, 500);
+    //     $('#img-4').animate({ "max-width": "0px"}, 500);
+    //     $('#img-5').animate({ "max-width": "0px"}, 500);
+    // } else if(rbtns[2].checked) {
+    //     $('#img-2').animate({ "max-width": "190px", "height": "190px"}, 500);
+    //     $('#img-3').animate({ "max-width": "262px", "height": "250px"}, 500);
+    //     $('#img-4').animate({ "max-width": "190px", "height": "190px"}, 500);
 
-        $('#img-1').animate({ "max-width": "0px"}, 500);
-        $('#img-5').animate({ "max-width": "0px"}, 500);
-    } else if(rbtns[3].checked) {
-        $('#img-3').animate({ "max-width": "190px", "height": "190px"}, 500);
-        $('#img-4').animate({ "max-width": "262px", "height": "250px"}, 500);
-        $('#img-5').animate({ "max-width": "190px", "height": "190px"}, 500);
+    //     $('#img-1').animate({ "max-width": "0px"}, 500);
+    //     $('#img-5').animate({ "max-width": "0px"}, 500);
+    // } else if(rbtns[3].checked) {
+    //     $('#img-3').animate({ "max-width": "190px", "height": "190px"}, 500);
+    //     $('#img-4').animate({ "max-width": "262px", "height": "250px"}, 500);
+    //     $('#img-5').animate({ "max-width": "190px", "height": "190px"}, 500);
 
-        $('#img-1').animate({ "max-width": "0px"}, 500);
-        $('#img-2').animate({ "max-width": "0px"}, 500);
-    } else if(rbtns[4].checked) {
-        $('#img-4').animate({ "max-width": "190px", "height": "190px"}, 500);
-        $('#img-5').animate({ "max-width": "262px", "height": "250px"}, 500);
+    //     $('#img-1').animate({ "max-width": "0px"}, 500);
+    //     $('#img-2').animate({ "max-width": "0px"}, 500);
+    // } else if(rbtns[4].checked) {
+    //     $('#img-4').animate({ "max-width": "190px", "height": "190px"}, 500);
+    //     $('#img-5').animate({ "max-width": "262px", "height": "250px"}, 500);
 
-        $('#img-1').animate({ "max-width": "0px"}, 500);
-        $('#img-2').animate({ "max-width": "0px"}, 500);
-        $('#img-3').animate({ "max-width": "0px"}, 500);
-    } 
+    //     $('#img-1').animate({ "max-width": "0px"}, 500);
+    //     $('#img-2').animate({ "max-width": "0px"}, 500);
+    //     $('#img-3').animate({ "max-width": "0px"}, 500);
+    // } 
+    for (var i = 0; i < rbtns.length; i++) {
+        if (rbtns[i].checked && (i !== 0 || i !== rbtns.length - 1)) {
+            $('#img-'+(i-1)).animate({ "max-width": "190px", "height": "190px"}, 500);
+            $('#img-'+i).animate({ "max-width": "262px", "height": "250px"}, 500);
+            $('#img-'+(i+1)).animate({ "max-width": "190px", "height": "190px"}, 500);
+
+            for(var j = i+2; j < rbtns.length; j++) $('#img-'+j).animate({ "max-width": "0px"}, 500);
+            for(var k = i-2; k >= 0; k--) $('#img-'+k).animate({ "max-width": "0px"}, 500);
+        } else if (rbtns[i].checked) {
+            if (i === 0) {
+                $('#img-'+i).animate({ "max-width": "262px", "height": "250px"}, 500);
+                $('#img-'+(i+1)).animate({ "max-width": "190px", "height": "190px"}, 500);
+
+                for (var j = i+2; j < rbtns.length; j++) $('#img-'+j).animate({ "max-width": "0px"}, 500);
+            } else if (i === rbtns.length-1) {
+                $('#img-'+i).animate({ "max-width": "262px", "height": "250px"}, 500);
+                $('#img-'+(i-1)).animate({ "max-width": "190px", "height": "190px"}, 500);
+
+                for (var j = i-2; j >= 0; j--) $('#img-'+j).animate({ "max-width": "0px"}, 500);
+            }
+        }
+    }
 }
