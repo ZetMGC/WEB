@@ -9,7 +9,7 @@ FormChangeHandler();
 form.addEventListener('change', getFormValue);
 radio.addEventListener('change', FormChangeHandler);
 
-function FormChangeHandler(event) {
+function FormChangeHandler() {
     if (HDD.checked) {
         document.getElementById('Select').hidden = true;
         document.getElementById('checkbox').hidden = true;
