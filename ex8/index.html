@@ -12,7 +12,7 @@
 <div class="container-fluid">
 
   <div class="row justify-content-center">
-    <div class="col-2 mt-5">
+    <div class="col-6 col-md-2 col-sm-3 mt-5">
       <button type="button" id="btn-open" class="btn btn-outline-danger p-3" data-bs-toggle="modal" data-bs-target="#Modal">Регистрация</button>
     </div>
   </div>
@@ -23,7 +23,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="staticBackdropLabel">Форма регистрации</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          <button type="button" id="btn-x" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
         </div>
         <div class="modal-body">
           <form id="form" action="https://api.slapform.com/4BGY8YmjYI" method="post">
@@ -51,12 +51,12 @@
               <input name="checkbox" type="checkbox" class="form-check-input" id="Check">
               <label class="form-check-label" for="Check">Согласие на обработку данных</label>
             </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" id="btn-x" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-          <button type="submit" id="btn-send" class="btn btn-primary">Отправить</button>
-        </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="btn-close" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            <button type="submit" id="btn-send" class="btn btn-primary">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
