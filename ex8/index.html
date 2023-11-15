@@ -26,40 +26,42 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
         </div>
         <div class="modal-body">
-          <form>
+          <form id="form" action="https://api.slapform.com/4BGY8YmjYI" method="post">
             <div class="mb-3">
               <label for="InputName" class="form-label">ФИО</label>
-              <input type="text" class="form-control" id="InputName">
+              <input name="name" type="text" class="form-control" id="InputName">
             </div>
             <div class="mb-3">
               <label for="InputTel" class="form-label">Телефон</label>
-              <input type="tel" class="form-control" id="InputTel">
+              <input name="tel" type="tel" class="form-control" id="InputTel">
             </div>
             <div class="mb-3">
               <label for="InputOrg" class="form-label">Организация</label>
-              <input type="text" class="form-control" id="InputOrg">
+              <input name="org" type="text" class="form-control" id="InputOrg">
             </div>
             <div class="mb-3">
               <label for="InputEmail" class="form-label">Адрес электронной почты</label>
-              <input type="email" class="form-control" id="InputEmail" >
+              <input name="email" type="email" class="form-control" id="InputEmail" >
             </div>
             <div class="mb-3">
-              <label for="InputPassword" class="form-label">Пароль</label>
-              <input type="password" class="form-control" id="InputPassword">
+              <label for="InputPassword" class="form-label">Сообщение</label>
+              <input name="text" type="text" class="form-control" id="InputMessage">
             </div>
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="Check">
+              <input name="checkbox" type="checkbox" class="form-check-input" id="Check">
               <label class="form-check-label" for="Check">Согласие на обработку данных</label>
             </div>
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" id="btn-x" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-          <button type="button" id="btn-send" class="btn btn-primary">Отправить</button>
+          <button type="submit" id="btn-send" class="btn btn-primary">Отправить</button>
         </div>
       </div>
     </div>
   </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/slapform@latest/dist/index.min.js"></script>
+<script src="script/main.js"></script>
 </body>
 </html>
