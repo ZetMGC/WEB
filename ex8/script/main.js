@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             message: document.getElementById("InputMessage").value,
             agree: document.getElementById("Check").checked,
         };
-        
+
         var slapform = new Slapform();
         event.preventDefault();
         slapform.submit({
@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
             history.back();
             Modal.hide();
             form.reset();
+            alert("Регистрация успешна!");
             localStorage.removeItem("form_inf");
         }, 1000);
     });
