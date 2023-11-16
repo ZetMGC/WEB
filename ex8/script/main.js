@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(function (response) { // This function runs only on success
             console.log('Success!', response);
+            alert("Регистрация успешна!");
         })
         .catch(function (response) { // This function runs only on error
             console.log('Fail!', response);
