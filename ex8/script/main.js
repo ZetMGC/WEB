@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
             history.back();
             Modal.hide();
             form.reset();
-            alert("Регистрация успешна!");
             localStorage.removeItem("form_inf");
         }, 1000);
     });
