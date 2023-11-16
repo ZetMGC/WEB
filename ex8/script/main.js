@@ -7,15 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const close = document.getElementById('btn-close');
     const x = document.getElementById('btn-x');
 
-    const form_inf = {
-        name: document.getElementById("InputName").value,
-        email: document.getElementById("InputEmail").value,
-        phone: document.getElementById("InputTel").value,
-        organization: document.getElementById("InputOrg").value,
-        message: document.getElementById("InputMessage").value,
-        agree: document.getElementById("Check").checked,
-    };
-
     close.addEventListener("click", function(event) { 
         history.back();
     });
@@ -29,6 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     form.addEventListener("submit", function (event) {
+        const form_inf = {
+            name: document.getElementById("InputName").value,
+            email: document.getElementById("InputEmail").value,
+            phone: document.getElementById("InputTel").value,
+            organization: document.getElementById("InputOrg").value,
+            message: document.getElementById("InputMessage").value,
+            agree: document.getElementById("Check").checked,
+        };
+        
         var slapform = new Slapform();
         event.preventDefault();
         slapform.submit({
