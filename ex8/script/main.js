@@ -54,4 +54,19 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.removeItem("form_inf");
         }, 1000);
     });
+    if (window.history && window.history.pushState) {
+        $('#Modal').on('show.bs.modal', function (e) {
+            window.history.pushState('forward', null, './#');
+        });
+    
+        $(window).on('popstate', function () {
+            $('#Modal').modal('hide');
+        });
+
+        window.addEventListener('pushstate', function(event) {
+            // Здесь можно снова отобразить модальное окно
+            $('#Modal').modal('show');
+        });
+    }
+
 });
