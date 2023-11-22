@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000);
     });
 
-    window.addEventListener('popstate', function(event) {
+    window.addEventListener('popstate', function() {
         if (modalShowed) {
             Modal.hide();
             modalShowed = false;
