@@ -29,11 +29,11 @@
           <form id="form" action="https://api.slapform.com/4BGY8YmjYI" method="post">
             <div class="mb-3">
               <label for="InputName" class="form-label">ФИО</label>
-              <input name="name" type="text" class="form-control" id="InputName">
+              <input name="name" type="text" class="form-control" id="InputName" required>
             </div>
             <div class="mb-3">
               <label for="InputTel" class="form-label">Телефон</label>
-              <input name="tel" type="tel" class="form-control" id="InputTel">
+              <input name="tel" type="tel" class="form-control" pattern="[+0-9]{11,}" id="InputTel" required>
             </div>
             <div class="mb-3">
               <label for="InputOrg" class="form-label">Организация</label>
@@ -48,7 +48,7 @@
               <input name="text" type="text" class="form-control" id="InputMessage">
             </div>
             <div class="mb-3 form-check">
-              <input name="checkbox" type="checkbox" class="form-check-input" id="Check">
+              <input name="checkbox" type="checkbox" class="form-check-input" id="Check" required>
               <label class="form-check-label" for="Check">Согласие на обработку данных</label>
             </div>
           </div>

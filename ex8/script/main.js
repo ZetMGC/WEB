@@ -34,28 +34,28 @@ document.addEventListener("DOMContentLoaded", function () {
             agree: document.getElementById("Check").checked,
         };
 
-        var slapform = new Slapform();
-        event.preventDefault();
-        slapform.submit({
-            form: '4BGY8YmjYI', 
-            data: form_inf,
-        })
-        .then(function (response) { // This function runs only on success
-            console.log('Success!', response);
-            alert("Регистрация успешна!");
-        })
-        .catch(function (response) { // This function runs only on error
-            console.log('Fail!', response);
-        })
+            var slapform = new Slapform();
+            event.preventDefault();
+            slapform.submit({
+                form: '4BGY8YmjYI', 
+                data: form_inf,
+            })
+            .then(function (response) { // This function runs only on success
+                console.log('Success!', response);
+                alert("Регистрация успешна!");
+            })
+            .catch(function (response) { // This function runs only on error
+                console.log('Fail!', response);
+            })
 
-        localStorage.setItem("form_inf", JSON.stringify(form_inf));
-        setTimeout(function () {
-            history.back();
-            Modal.hide();
-            modalShowed = false;
-            form.reset();
-            localStorage.removeItem("form_inf");
-        }, 1000);
+            localStorage.setItem("form_inf", JSON.stringify(form_inf));
+            setTimeout(function () {
+                history.back();
+                form.reset();
+                Modal.hide();
+                modalShowed = false;
+                localStorage.removeItem("form_inf");
+            }, 1000);
     });
 
     window.addEventListener('popstate', function() {
